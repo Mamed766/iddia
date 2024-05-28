@@ -1,0 +1,12 @@
+@use "../utils" as *;
+@use "../base" as *;
+button {
+  padding: $btn-padding;
+  border: 1px solid $gray;
+  border-radius: $btn-border-radius;
+  background-color: $openblue;
+  color: $blue;
+  cursor: pointer;
+
+  outline: none;
+}

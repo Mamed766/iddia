@@ -1,0 +1,48 @@
+@use "../utils" as *;
+@use "../base" as *;
+
+@mixin card-style {
+  height: 23.7rem;
+  @include flex(flex, column);
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    transform: scale(1.04);
+  }
+  cursor: pointer;
+  padding-bottom: 5rem;
+  @include border-radius(1rem);
+
+  background-color: $white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: $blue;
+  font-size: $font-size-default;
+  overflow: hidden;
+  &--content {
+    padding: 0.5rem;
+    @include flex(flex, column, null, start);
+    gap: 0.5rem;
+    margin-top: 5%;
+  }
+
+  &--img {
+    img {
+      height: 15rem;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.cards {
+  padding: $default-padding--section;
+
+  &__buttons {
+    grid-column: 1/-1;
+    @include flex(flex, null, flex-end);
+    gap: 0.3rem;
+  }
+
+  &__card {
+    @include card-style;
+  }
+}

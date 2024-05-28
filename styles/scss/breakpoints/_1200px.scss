@@ -1,0 +1,40 @@
+@use "../utils/" as *;
+
+@media screen and (max-width: 1200px) {
+  .nav {
+    &__btns {
+      button {
+        &:nth-child(3) {
+          display: none;
+        }
+      }
+    }
+
+    &__search {
+      display: none;
+    }
+
+    justify-content: center;
+  }
+
+  .navbar {
+    padding: 2rem 0;
+    &__logo {
+      grid-column: 2/3;
+    }
+
+    &__links {
+      display: none;
+    }
+  }
+
+  .footer {
+    &__top {
+      @include flex(flex, column, center, center);
+    }
+
+    &__bottom {
+      @include flex(flex, column, center, center);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+@mixin flex($display: null, $direction: null, $content: null, $items: null) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $items;
+}

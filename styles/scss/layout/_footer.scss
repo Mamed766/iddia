@@ -1,0 +1,75 @@
+@use "../utils" as *;
+@use "../base" as *;
+.footer {
+  background-color: $footercolor;
+  padding: $default-padding--section;
+
+  &__top {
+    &--logo {
+      cursor: pointer;
+      svg {
+        width: 200px;
+      }
+    }
+
+    &--links {
+      cursor: pointer;
+      grid-column: 7/-1;
+      display: flex;
+      gap: 0.5rem;
+      list-style: none;
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 0.5rem;
+        transition: all 0.25s ease-in-out;
+
+        li {
+          i {
+            transition: all 0.25s ease-in-out;
+          }
+          &:hover {
+            i {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+      i {
+        margin-top: 1.3rem;
+        font-size: $font-size-xl;
+      }
+    }
+
+    border-bottom: 1px solid $gray;
+  }
+
+  &__bottom {
+    margin-top: 0.5rem;
+    &--start {
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 0.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.fa-facebook {
+  color: $blue;
+}
+.fa-linkedin {
+  color: $openblue;
+}
+
+.fa-instagram {
+  color: orangered;
+}
+.fa-twitter {
+  color: $blue;
+}
+.fa-youtube {
+  color: red;
+}

@@ -1,0 +1,62 @@
+@use "../base" as *;
+@use "../utils" as *;
+
+.nav {
+  padding: $default-padding--section;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 12;
+  padding: $default-padding--section;
+  width: 100%;
+  border-bottom: 1px solid $gray;
+
+  &__logo {
+    cursor: pointer;
+  }
+  &__links {
+    cursor: pointer;
+    grid-column: 4/6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    &--link {
+      list-style: none;
+      color: $blue;
+      font-size: $font-size-xl;
+    }
+  }
+}
+
+.stickman {
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+  right: 0;
+  margin: 2rem 2rem 0 0;
+  background-color: $blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  &__border {
+    border: 2px solid $white;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 5rem;
+    border-radius: 2rem;
+    i {
+      margin-top: 0.8rem;
+      margin-left: 1rem;
+      font-size: $font-size-xl;
+      color: $white;
+    }
+  }
+}
