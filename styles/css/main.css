@@ -60,6 +60,7 @@ body {
 
 .stickman {
   position: fixed;
+  transition: all 0.25s ease-in-out;
   z-index: 1;
   cursor: pointer;
   right: 0;
@@ -71,6 +72,9 @@ body {
   width: 4rem;
   height: 4rem;
   border-radius: 2rem;
+}
+.stickman:hover {
+  transform: scale(1.1);
 }
 .stickman__border {
   border: 2px solid #fff;
