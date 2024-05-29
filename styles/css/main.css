@@ -65,10 +65,10 @@ body {
   cursor: pointer;
   right: 0;
   margin: 2rem 2rem 0 0;
-  background-color: #0257c2;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #0257c2;
   width: 4rem;
   height: 4rem;
   border-radius: 2rem;
@@ -216,23 +216,17 @@ button {
 }
 
 @media screen and (max-width: 1200px) {
+  .navbar__links, .nav__search, .nav__btns button:nth-child(3) {
+    display: none;
+  }
   .nav {
     justify-content: center;
-  }
-  .nav__btns button:nth-child(3) {
-    display: none;
-  }
-  .nav__search {
-    display: none;
   }
   .navbar {
     padding: 2rem 0;
   }
   .navbar__logo {
     grid-column: 2/3;
-  }
-  .navbar__links {
-    display: none;
   }
   .footer__top {
     display: flex;

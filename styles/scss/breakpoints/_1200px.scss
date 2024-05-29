@@ -1,17 +1,21 @@
 @use "../utils/" as *;
 
 @media screen and (max-width: 1200px) {
+  %display {
+    display: none;
+  }
+
   .nav {
     &__btns {
       button {
         &:nth-child(3) {
-          display: none;
+          @extend %display;
         }
       }
     }
 
     &__search {
-      display: none;
+      @extend %display;
     }
 
     justify-content: center;
@@ -24,7 +28,7 @@
     }
 
     &__links {
-      display: none;
+      @extend %display;
     }
   }
 

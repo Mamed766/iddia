@@ -3,8 +3,7 @@
 
 .nav {
   padding: $default-padding--section;
-  display: flex;
-  justify-content: space-between;
+  @include flex(flex, null, space-between, null);
 }
 
 .navbar {
@@ -20,9 +19,7 @@
   &__links {
     cursor: pointer;
     grid-column: 4/6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, null, center, center);
     gap: 1rem;
 
     &--link {
@@ -43,10 +40,8 @@
   cursor: pointer;
   right: 0;
   margin: 2rem 2rem 0 0;
+  @include flex(flex, null, center, center);
   background-color: $blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 4rem;
   height: 4rem;
   border-radius: 2rem;
