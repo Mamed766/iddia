@@ -1,6 +1,10 @@
 @use "../utils" as *;
 @use "../base" as *;
 
+%padding {
+  padding-bottom: 5rem;
+}
+
 @mixin card-style {
   height: 23.7rem;
   @include flex(flex, column);
@@ -9,7 +13,7 @@
     transform: scale(1.04);
   }
   cursor: pointer;
-  padding-bottom: 5rem;
+  @extend %padding;
   @include border-radius(1rem);
 
   background-color: $white;

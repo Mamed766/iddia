@@ -162,6 +162,10 @@ body {
   gap: 3rem;
 }
 
+.cards__card {
+  padding-bottom: 5rem;
+}
+
 .cards {
   padding: 2% 10%;
 }
@@ -177,7 +181,6 @@ body {
   flex-direction: column;
   transition: all 0.25s ease-in-out;
   cursor: pointer;
-  padding-bottom: 5rem;
   border-radius: 1rem;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
